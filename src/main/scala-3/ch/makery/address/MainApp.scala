@@ -79,3 +79,8 @@ object MainApp extends JFXApp3:
     a + b
 
   println(add(1,2))
+  
+  extension (value: Int)
+    def area: Double = 3.142 * value * value
+    
+  println(5.area)
